@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_view">
+
+    <ListPreference
+        android:key="pref_hitrate"
+        android:title="@string/pref_hitrate_title"
+        android:summary="@string/pref_hitrate_summary"
+        android:dialogTitle="@string/pref_hitrate_dialog_title"
+        android:entries="@array/hitrate_keys"
+        android:entryValues="@array/hitrate_values"
+        android:defaultValue="@string/hitrate_default"/>
+
+    <ListPreference
+        android:key="pref_progress_bar"
+        android:title="@string/pref_progress_bar_title"
+        android:summary="@string/pref_progress_bar_summary"
+        android:dialogTitle="@string/pref_progress_bar_dialog_title"
+        android:entries="@array/progress_bar_keys"
+        android:entryValues="@array/progress_bar_values"
+        android:defaultValue="@string/progress_bar_default"/>
+
+</PreferenceScreen>

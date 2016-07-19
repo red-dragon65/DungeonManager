@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cyberllama.mujtabaashfaq.materialtest.AnotherFragment"
+    android:id="@+id/char_frag">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/character_recycler"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorShade"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/materialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add" />
+
+    <ProgressBar
+        android:id="@+id/refBar"
+        android:progress="75"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:visibility="invisible"
+        android:progressDrawable="@drawable/prog_bar_green"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+</FrameLayout>

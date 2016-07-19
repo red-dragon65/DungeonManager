@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <!--ENTIRE LAYOUT-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/not_buttons"
+                android:layout_marginRight="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+
+                <!--Name Items-->
+                <RelativeLayout
+                    android:id="@+id/nameRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/character_name"
+                        android:text="Character Name"
+                        android:textSize="24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+                <!--Health Items-->
+                <RelativeLayout
+                    android:id="@+id/healthRow"
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/nameRow">
+
+                    <TextView
+                        android:id="@+id/healthTitle"
+                        android:text="Health:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/healthPercent"
+                        android:paddingLeft="4dp"
+                        android:layout_toRightOf="@id/healthTitle"
+                        android:text="100%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/healthTot"
+                        android:layout_marginLeft="90dp"
+                        android:text="Total:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/healthRem"
+                        android:layout_marginLeft="175dp"
+                        android:text="Left:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ProgressBar
+                        android:id="@+id/healthBar"
+                        android:progress="75"
+                        android:layout_marginLeft="0dp"
+                        android:layout_below="@id/healthPercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:progressDrawable="@drawable/prog_bar_green"
+                        style="?android:attr/progressBarStyleHorizontal" />
+
+
+                    <ImageView
+                        android:id="@+id/heart0"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart1"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart2"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart3"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart4"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart5"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart6"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart7"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart8"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/heart9"
+                        style="@style/bitStyle"/>
+
+
+                </RelativeLayout>
+
+
+                <!--Mana Items-->
+                <RelativeLayout
+                    android:id="@+id/manaRow"
+                    android:paddingTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/healthRow">
+
+                    <TextView
+                        android:id="@+id/manaTitle"
+                        android:text="Mana: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/manaPercent"
+                        android:text="100%"
+                        android:paddingLeft="4dp"
+                        android:layout_toRightOf="@id/manaTitle"
+                        android:layout_alignBottom="@id/manaTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/manaTot"
+                        android:layout_marginLeft="90dp"
+                        android:text="Total:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/manaRem"
+                        android:layout_marginLeft="175dp"
+                        android:text="Left:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ProgressBar
+                        android:id="@+id/manaBar"
+                        android:progress="75"
+                        android:layout_below="@id/manaPercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:progressDrawable="@drawable/prog_bar_green"
+                        style="?android:attr/progressBarStyleHorizontal" />
+
+
+                    <ImageView
+                        android:id="@+id/mana0"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana1"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana2"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana3"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana4"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana5"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana6"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana7"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana8"
+                        style="@style/bitStyle"/>
+                    <ImageView
+                        android:id="@+id/mana9"
+                        style="@style/bitStyle"/>
+
+
+                </RelativeLayout>
+
+
+                <!--TP Items-->
+                <RelativeLayout
+                    android:id="@+id/tpRow"
+                    android:paddingTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/manaRow">
+
+                    <TextView
+                        android:id="@+id/tpTitle"
+                        android:text="Tp:      "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tpPercent"
+                        android:text="100%"
+                        android:paddingLeft="4dp"
+                        android:layout_toRightOf="@id/tpTitle"
+                        android:layout_alignBottom="@id/tpTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tpTot"
+                        android:layout_marginLeft="90dp"
+                        android:text="Total:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tpRem"
+                        android:layout_marginLeft="175dp"
+                        android:text="Left:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ProgressBar
+                        android:id="@+id/tpBar"
+                        android:progress="75"
+                        android:layout_below="@id/tpPercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:progressDrawable="@drawable/prog_bar_green"
+                        style="?android:attr/progressBarStyleHorizontal" />
+
+                    <!--TODO: SET 'TP' SPRITES-->
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!--BUTTONS-->
+            <RelativeLayout
+                android:id="@+id/buttonRow"
+                android:layout_alignParentRight="true"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/removeButton"
+                    android:text="Remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+
+                <Button
+                    android:id="@+id/healthAddButton"
+                    android:text="+"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_below="@id/removeButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:id="@+id/healthMinButton"
+                    android:text="-"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@id/removeButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+
+                <Button
+                    android:id="@+id/manaAddButton"
+                    android:text="+"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_below="@id/healthAddButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:id="@+id/manaMinButton"
+                    android:text="-"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@id/healthMinButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+
+                <Button
+                    android:id="@+id/tpAddButton"
+                    android:text="+"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_below="@id/manaAddButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:id="@+id/tpMinButton"
+                    android:text="-"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_below="@id/manaMinButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+</AbsoluteLayout>

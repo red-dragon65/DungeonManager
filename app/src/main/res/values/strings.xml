@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Dungeon Manager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <!--Dialog box strings-->
+    <string name="dialog_title">Add Character</string>
+    <string name="dialog_name_hint">Character Name</string>
+    <string name="dialog_health_hint">Health Amount</string>
+    <string name="dialog_mana_hint">Mana Amount</string>
+    <string name="dialog_tp_hint">Tp Amount</string>
+
+
+
+    <!--Preferences layout strings-->
+    <string name="pref_hitrate_title">Hit Rate</string>
+    <string name="pref_hitrate_summary">Change add/min value</string>
+    <string name="pref_hitrate_dialog_title">Select Hit Rate</string>
+
+    <string-array name="hitrate_keys">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="hitrate_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string name="hitrate_default">1</string>
+
+
+
+    <string name="pref_progress_bar_title">Progress Bar</string>
+    <string name="pref_progress_bar_summary">Change progress bar theme</string>
+    <string name="pref_progress_bar_dialog_title">Select Theme</string>
+
+    <string-array name="progress_bar_keys">
+        <item>Green</item>
+        <item>8-Bit</item>
+    </string-array>
+    <string-array name="progress_bar_values">
+        <item>Green</item>
+        <item>Bit</item>
+    </string-array>
+    <string name="progress_bar_default">Green</string>
+</resources>
